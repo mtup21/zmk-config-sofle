@@ -30,6 +30,13 @@
             bindings = <&none &kp P &kp A &kp T &kp T &kp E &kp R &kp N &kp EQUAL>;
             label = "PATTERN";
         };
+
+        code_block: code_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LEFT_BRACE &kp C &kp O &kp D &kp E &kp RBRC &kp RET &kp RET &kp LEFT_BRACE &kp C &kp O &kp D &kp E &kp RBRC &kp UP_ARROW>;
+            label = "CODE_BLOCK";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -97,11 +104,11 @@
 
         macros {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans  &trans    &trans
-&trans  &trans  &trans  &email  &trans  &trans                    &trans  &trans  &instance  &trans  &pattern  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans  &trans    &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans       &trans  &trans                    &trans  &trans  &trans     &trans  &trans    &trans
+&trans  &trans  &trans  &email       &trans  &trans                    &trans  &trans  &instance  &trans  &pattern  &trans
+&trans  &trans  &trans  &trans       &trans  &trans                    &trans  &trans  &trans     &trans  &trans    &trans
+&trans  &trans  &trans  &code_block  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans  &trans    &trans
+                &trans  &trans       &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans
             >;
         };
     };
