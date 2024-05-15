@@ -32,6 +32,22 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <27 28>;
+            layers = <0>;
+        };
+
+        paste {
+            bindings = <&kp LG(LS(V))>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -93,7 +109,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_3 {
+        macros {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans  &trans    &trans
 &trans  &trans  &trans  &email  &trans  &trans                    &trans  &trans  &instance  &trans  &pattern  &trans
