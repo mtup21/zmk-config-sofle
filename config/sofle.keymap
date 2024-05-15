@@ -17,11 +17,11 @@
             label = "EMAIL";
         };
 
-        instance: code_block {
+        instance: instance {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp I &kp N &kp S &kp T &kp A &kp N &kp C &kp E &kp EQUAL>;
-            label = "CODE_BLOCK";
+            label = "INSTANCE";
         };
 
         pattern: pattern {
