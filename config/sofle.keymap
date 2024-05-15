@@ -10,11 +10,25 @@
 
 / {
     macros {
-        Email: Email {
+        email: Email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp LS(M) &kp I &kp C &kp H &kp A &kp E &kp L &kp DOT &kp LS(T) &kp U &kp P &kp P &kp E &kp R &kp AT &kp C &kp R &kp O &kp W &kp D &kp S &kp T &kp R &kp I &kp K &kp E &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL";
+        };
+
+        instance: code_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp I &kp N &kp S &kp T &kp A &kp N &kp C &kp E &kp EQUAL>;
+            label = "CODE_BLOCK";
+        };
+
+        pattern: pattern {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp P &kp A &kp T &kp T &kp E &kp R &kp N &kp EQUAL>;
+            label = "PATTERN";
         };
     };
 
@@ -82,7 +96,7 @@
         layer_3 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &Email  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &email  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
