@@ -95,11 +95,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &email  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans  &trans    &trans
+&trans  &trans  &trans  &email  &trans  &trans                    &trans  &trans  &instance  &trans  &pattern  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans  &trans    &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans
             >;
         };
     };
